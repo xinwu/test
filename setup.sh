@@ -14,7 +14,7 @@ sudo gem install rdoc-data
 sudo rdoc-data --install
 sudo service apache2 stop
 sudo aptitude purge apache2
-mkdir $path
+mkdir -p $path
 cd $path
 rails new $path 
 rails server -b $ip -p $port
