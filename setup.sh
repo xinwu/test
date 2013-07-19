@@ -17,4 +17,4 @@ sudo aptitude purge apache2
 mkdir -p $path
 cd $path
 rails new $path 
-rails server -b $ip -p $port
+rails server -b $ip -p $port &
