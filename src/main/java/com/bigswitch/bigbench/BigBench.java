@@ -2,15 +2,17 @@ package com.bigswitch.bigbench;
 
 import org.restlet.Component;
 import org.restlet.data.Protocol;
+
 import com.bigswitch.bigbench.web.BigBenchRestApplication;
 
 public class BigBench 
 {
 	public static Component restComponent;
+	public static String CURRENT_CONFIG_FILE = "/tmp/current-configuration.json";
+	public static String DELTA_CONFIG_FILE = "/tmp/delta-configuration.json";
 	
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         startRESTApplication();
     }
     
