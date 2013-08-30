@@ -65,7 +65,6 @@ public class ConfigurationResource extends ServerResource  {
             List<FileItem> items = upload.parseRepresentation(entity);
             for (FileItem fi : items) {  
                 if (fi.getFieldName().equals("file")) {
-                	System.out.println(BigBench.DELTA_CONFIG_FILE);
                     File file = new File(BigBench.DELTA_CONFIG_FILE);
                     fi.write(file); 
                     break;
